@@ -1,5 +1,7 @@
 Cardinal
 ========
+
+[![Join the chat at https://gitter.im/DaAwesomeP/arduino-cardinal](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/DaAwesomeP/arduino-cardinal?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![license](https://img.shields.io/github/license/DaAwesomeP/arduino-cardinal.svg?style=flat-square)](https://github.com/DaAwesomeP/arduino-cardinal/blob/master/LICENSE) [![Github Releases](https://img.shields.io/github/downloads/DaAwesomeP/arduino-cardinal/latest/total.svg?style=flat-square)](https://github.com/DaAwesomeP/arduino-cardinal/releases/latest) [![Gitter chat](https://badges.gitter.im/DaAwesomeP/arduino-cardinal.png?style=flat-square)](https://gitter.im/DaAwesomeP/arduino-cardinal)
 ---
 Cardinal is an Arduino library that takes input in degrees and output a string or integer for the 4, 8, 16, or 32 compass headings (like North, South, East, and West). It also makes available variables for the minimum, maximum, and middle azimuth of all of the 32 directions. It works fantastically when paired with a magnetometer.
