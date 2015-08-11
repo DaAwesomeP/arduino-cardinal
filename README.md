@@ -1,6 +1,6 @@
 Cardinal
 ========
-[![license](https://img.shields.io/github/license/DaAwesomeP/arduino-cardinal.svg?style=flat-square)](https://github.com/DaAwesomeP/arduino-cardinal/blob/master/LICENSE) [![Github Releases](https://img.shields.io/github/downloads/DaAwesomeP/arduino-cardinal/latest/total.svg?style=flat-square)](https://github.com/DaAwesomeP/arduino-cardinal/releases/latest) [![Gitter chat](https://badges.gitter.im/DaAwesomeP/arduino-cardinal.png?style=flat-square)](https://gitter.im/DaAwesomeP/arduino-cardinal)
+[![License](https://img.shields.io/github/license/DaAwesomeP/arduino-cardinal.svg?style=flat-square)](https://github.com/DaAwesomeP/arduino-cardinal/blob/master/LICENSE) [![GitHub release](https://img.shields.io/github/release/DaAwesomeP/arduino-cardinal.svg?style=flat-square)](https://github.com/DaAwesomeP/arduino-cardinal/releases/latest) [![Github Releases Downloads](https://img.shields.io/github/downloads/DaAwesomeP/arduino-cardinal/latest/total.svg?style=flat-square)](https://github.com/DaAwesomeP/arduino-cardinal/releases/latest) [![Gitter chat](https://badges.gitter.im/DaAwesomeP/arduino-cardinal.png?style=flat-square)](https://gitter.im/DaAwesomeP/arduino-cardinal)
 ---
 Cardinal is an Arduino library that takes input in degrees and output a string or integer for the 4, 8, 16, or 32 compass headings (like North, South, East, and West). It also makes available environment variables for the minimum, maximum, and middle azimuth of all of the 32 directions. It works fantastically when paired with a magnetometer.
 
@@ -10,7 +10,7 @@ Cardinal is an Arduino library that takes input in degrees and output a string o
 Cardinal will (hopefully) soon be in the package manager. When it is added, you can go to `Sketch > Tools > Include Library > Manage Libraries` and search and install the latest release version Cardinal.
 
 ### Via the ZIP archive
-Download the latest release ZIP from [here](https://github.com/DaAwesomeP/arduino-cardinal/releases/latest) or the latest testing release from [here](). Then go to `Sketch > Tools > Include Library > Add ZIP Library`.
+Download the latest release ZIP from [here](https://github.com/DaAwesomeP/arduino-cardinal/releases/latest) or the latest testing release from [here](https://github.com/DaAwesomeP/arduino-cardinal/archive/master.zip). Then go to `Sketch > Tools > Include Library > Add ZIP Library`.
 
 ## Usage
 The first thing to do is to include the library in your sketch. Goes to `Sketch > Include Library > Cardinal`. The example has everything put to use in it, so I would advice looking there too. You should also take a look at the types at the wiki page [here](https://github.com/DaAwesomeP/arduino-cardinal/wiki/Types).
