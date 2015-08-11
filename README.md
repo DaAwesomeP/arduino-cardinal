@@ -13,7 +13,7 @@ Cardinal will (hopefully) soon be in the package manager, so be patient.
 Download the latest release ZIP from [here](https://github.com/DaAwesomeP/arduino-cardinal/releases/latest). If you don't know how to install an Arduino library from the ZIP, then just Google it.
 
 ## Usage
-The first thing to do is to include the library in your sketch. Goes to SKetch > Include Library > Cardinal. The example has everything put to use in it, so I would advice looking there too. You should also take a look at the types at the wiki page [here]().
+The first thing to do is to include the library in your sketch. Goes to SKetch > Include Library > Cardinal. The example has everything put to use in it, so I would advice looking there too. You should also take a look at the types at the wiki page [here](https://github.com/DaAwesomeP/arduino-cardinal/wiki/Types).
 
 ### Cardinal *name*
 This initializes the class and bind it to a name of your choosing. Just use `cardinal` and make it simple. You will call the other functions with like `name.otherFunction`. So, if you choose cardinal, then it would be `cardinal.otherFunction`.
@@ -24,7 +24,7 @@ Cardinal cardinal;
 ```
 
 ### ::integer(int *type*, float *inputFloat*)
-This will take the types that you select and an input float in degrees and about a heading by numbers 1 through 32.
+This will take the type that you select and an input float in degrees and about a heading by numbers 1 through 32.
 
 **Example:**
 ```cpp
@@ -33,7 +33,7 @@ cardinal.integer(3, 190.15);
 ```
 
 ### ::integer(int *type*, float *inputFloat*)
-This will take the types that you select and an input float in degrees and about a heading in text format.
+This will take the type that you select and an input float in degrees and about a heading in text format.
 
 **Example:**
 ```cpp
