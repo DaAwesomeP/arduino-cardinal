@@ -27,50 +27,65 @@
 
 #include <Cardinal.h>    // Include the library
 
-int type = 3; // Type of precision
 /*
-Precision types:
+Precision types (see https://github.com/DaAwesomeP/arduino-cardinal/wiki/Types for mroe info):
  - 0: N, S, E, W
  - 1: N, NE, E, SE, S, SW, W, NW
  - 2: N, NNE, NE, ENE, E, ESE, SE, SSE, S, SSW, SW, WSW, W, WNW, NW, NNW
  - 3: all 32 headings (N, NbE, NNE, NEbN, NE, NEbE, etc.)
 */
+int type = 3; // Type of precision
 
+// Vars for grabbing the serial input
 String inputString = "";
 float inputFloat;
 boolean stringComplete = false;
 
+// Vars for string the converted headings
 String stringOut;
 int intOut;
 
 Cardinal cardinal;   // init the library to "cardnial"
 
 void setup() {
+  // Initialize serial
   Serial.begin(9600);
+  Serial.println("Cardinal example by DaAwesomeP");
+  Serial.println("-------------------------------------------------------------------------------------------");
+  // More environment variables can be found in Cardinal.h  or at https://github.com/DaAwesomeP/arduino-cardinal/wiki/Environment-Variables
+  Serial.println("Did you know that lots of new environment variables are available now?");
+  Serial.println("Here's a few (you can find them in the header file or in the Wiki):");
+  Serial.print("CARDINAL_NEbN_MIDAZ: "); Serial.print(CARDINAL_NEbN_MIDAZ); Serial.println(" (the middle azimuth of Northeast by North)");
+  Serial.print("CARDINAL_E_MIN: "); Serial.print(CARDINAL_E_MIN); Serial.println(" (the minimum degrees of East)");
+  Serial.print("CARDINAL_ESE: "); Serial.print(CARDINAL_ESE); Serial.println(" (the integer ID of East-southeast)");
+  Serial.println("-------------------------------------------------------------------------------------------");
   Serial.println("Type a number from 0 to 360 (including decimals) and see the output!");
-  Serial.println("--------------------------------------------------------------------");
+  Serial.println("-------------------------------------------------------------------------------------------");
 }
 
 void loop() {
-  if (stringComplete) {
+  if (stringComplete) {                                // If something has been entered in serial
     inputFloat = inputString.toFloat();                // Convert the inputted number to a float
     intOut = cardinal.integer(type, inputFloat);       // Use that float to get the heading number
     stringOut = cardinal.string(type, inputFloat);     // Use that float to get the heading in text format
-    Serial.print("in: ");
+    Serial.print("in: ");                              // Print the data to serial
     Serial.print(inputString);
     Serial.print("int: ");
     Serial.print(intOut);
     Serial.print(" str: ");
     Serial.println(stringOut);
     // clear the string:
-    inputString = "";
-    stringComplete = false;
+    inputString = "";                                  // Clear the input string
+    stringComplete = false;                            // Clear the input boolean
   }
 }
 
+// For compatibility with some Arduinos that lack this event (like the Pro Mini)
 void serialEventRun(void) {
   if (Serial.available()) serialEvent();
 }
+
+// Catch 
 void serialEvent() {
   while (Serial.available()) {
     // get the new byte:
