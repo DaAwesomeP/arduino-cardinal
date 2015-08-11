@@ -7,13 +7,13 @@ Cardinal is an Arduino library that takes input in degrees and output a string o
 ## Installation
 
 ### Via Arduino IDE Library Manager
-Cardinal will (hopefully) soon be in the package manager, so be patient.
+Cardinal will (hopefully) soon be in the package manager. When it is added, you can go to `Sketch > Tools > Include Library > Manage Libraries` and search and install the latest release version Cardinal.
 
 ### Via the ZIP archive
-Download the latest release ZIP from [here](https://github.com/DaAwesomeP/arduino-cardinal/releases/latest). If you don't know how to install an Arduino library from the ZIP, then just Google it.
+Download the latest release ZIP from [here](https://github.com/DaAwesomeP/arduino-cardinal/releases/latest) or the latest testing release from [here](). Then go to `Sketch > Tools > Include Library > Add ZIP Library`.
 
 ## Usage
-The first thing to do is to include the library in your sketch. Goes to SKetch > Include Library > Cardinal. The example has everything put to use in it, so I would advice looking there too. You should also take a look at the types at the wiki page [here](https://github.com/DaAwesomeP/arduino-cardinal/wiki/Types).
+The first thing to do is to include the library in your sketch. Goes to `Sketch > Include Library > Cardinal`. The example has everything put to use in it, so I would advice looking there too. You should also take a look at the types at the wiki page [here](https://github.com/DaAwesomeP/arduino-cardinal/wiki/Types).
 
 ### Cardinal *name*
 This initializes the class and bind it to a name of your choosing. Just use `cardinal` and make it simple. You will call the other functions with like `name.otherFunction`. So, if you choose cardinal, then it would be `cardinal.otherFunction`.
