@@ -171,8 +171,8 @@
 class Cardinal
 {
   public:
-    String string(int type, float degree);
-    int integer(int type, float degree);
+    String getString(int type, float degree);
+    int getInteger(int type, float degree);
   private:
     void _lookup(int type, float degree);
     int _intOut;

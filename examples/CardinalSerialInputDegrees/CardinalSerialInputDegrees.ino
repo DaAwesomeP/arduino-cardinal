@@ -28,7 +28,7 @@
 #include <Cardinal.h>    // Include the library
 
 /*
-Precision types (see https://github.com/DaAwesomeP/arduino-cardinal/wiki/Types for mroe info):
+Precision types (see https://github.com/DaAwesomeP/arduino-cardinal/wiki/Types for more info):
  - 0: N, S, E, W
  - 1: N, NE, E, SE, S, SW, W, NW
  - 2: N, NNE, NE, ENE, E, ESE, SE, SSE, S, SSW, SW, WSW, W, WNW, NW, NNW
@@ -45,7 +45,7 @@ boolean stringComplete = false;
 String stringOut;
 int intOut;
 
-Cardinal cardinal;   // init the library to "cardnial"
+Cardinal cardinal;   // init the library to "cardinal"
 
 void setup() {
   // Initialize serial
@@ -66,8 +66,8 @@ void setup() {
 void loop() {
   if (stringComplete) {                                // If something has been entered in serial
     inputFloat = inputString.toFloat();                // Convert the inputted number to a float
-    intOut = cardinal.integer(type, inputFloat);       // Use that float to get the heading number
-    stringOut = cardinal.string(type, inputFloat);     // Use that float to get the heading in text format
+    intOut = cardinal.getInteger(type, inputFloat);       // Use that float to get the heading number
+    stringOut = cardinal.getString(type, inputFloat);     // Use that float to get the heading in text format
     Serial.print("in: ");                              // Print the data to serial
     Serial.print(inputString);
     Serial.print("int: ");

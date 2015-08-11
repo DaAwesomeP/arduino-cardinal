@@ -366,12 +366,12 @@ void Cardinal::_lookup(int type, float degree)
   }
 }
 
-String Cardinal::string(int type, float degree)
+String Cardinal::getString(int type, float degree)
 {
   _lookup(type, degree);
   return _stringOut;
 }
-int Cardinal::integer(int type, float degree)
+int Cardinal::getInteger(int type, float degree)
 {
   _lookup(type, degree);
   return _intOut;

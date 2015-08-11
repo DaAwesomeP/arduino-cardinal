@@ -5,6 +5,7 @@ Cardinal
 Cardinal is an Arduino library that takes input in degrees and output a string or integer for the 4, 8, 16, or 32 compass headings (like North, South, East, and West). It also makes available environment variables for the minimum, maximum, and middle azimuth of all of the 32 directions. It works fantastically when paired with a magnetometer.
 
 ## Installation
+Cardinal is currently compatible with both Arduino 1.0.x and 1.5.x.
 
 ### Via Arduino IDE Library Manager
 Cardinal will (hopefully) soon be in the package manager. When it is added, you can go to `Sketch > Tools > Include Library > Manage Libraries` and search and install the latest release version Cardinal.
@@ -23,21 +24,21 @@ This initializes the class and bind it to a name of your choosing. Just use `car
 Cardinal cardinal;
 ```
 
-### ::integer(int *type*, float *inputFloat*)
+### ::getInteger(int *type*, float *inputFloat*)
 This will take the type that you select and an input float in degrees and about a heading by numbers 1 through 32.
 
 **Example:**
 ```cpp
-cardinal.integer(3, 190.15);
+cardinal.getInteger(3, 190.15);
 // returns 18
 ```
 
-### ::integer(int *type*, float *inputFloat*)
+### ::getString(int *type*, float *inputFloat*)
 This will take the type that you select and an input float in degrees and about a heading in text format.
 
 **Example:**
 ```cpp
-cardinal.integer(3, 190.15);
+cardinal.getString(3, 190.15);
 // returns SbW
 ```
 
