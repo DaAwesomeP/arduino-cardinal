@@ -41,7 +41,7 @@ cardinal.integer(3, 190.15);
 // returns SbW
 ```
 
-### Environment Variables
+## Environment Variables
 Environment Variables for the integer id, middle azimuth, minimum degrees, and maximum degrees for all 32 headings are available [here](https://github.com/DaAwesomeP/arduino-cardinal/wiki/Environment-Variables).
 
 ## More Information
