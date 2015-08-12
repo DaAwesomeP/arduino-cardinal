@@ -8,10 +8,10 @@ Cardinal is an Arduino library that takes input in degrees and output a string o
 Cardinal is currently compatible with both Arduino 1.0.x and 1.5.x.
 
 ### Via Arduino IDE Library Manager
-Cardinal will (hopefully) soon be in the package manager. When it is added, you can go to `Sketch > Tools > Include Library > Manage Libraries` and search and install the latest release version Cardinal.
+Cardinal is in the library manager. From the latest version of the Arduino IDE, go to `Sketch > Tools > Include Library > Manage Libraries` and search and install the latest release version of Cardinal.
 
 ### Via the ZIP archive
-Download the latest release ZIP from [here](https://github.com/DaAwesomeP/arduino-cardinal/releases/latest) or the latest testing release from [here](https://github.com/DaAwesomeP/arduino-cardinal/archive/master.zip). Then go to `Sketch > Tools > Include Library > Add ZIP Library`.
+Download the latest release ZIP from [here](https://github.com/DaAwesomeP/arduino-cardinal/releases/latest) or the latest testing version from [here](https://github.com/DaAwesomeP/arduino-cardinal/archive/master.zip). Then go to `Sketch > Tools > Include Library > Add ZIP Library`.
 
 ## Usage
 The first thing to do is to include the library in your sketch. Goes to `Sketch > Include Library > Cardinal`. The example has everything put to use in it, so I would advice looking there too. You should also take a look at the types at the wiki page [here](https://github.com/DaAwesomeP/arduino-cardinal/wiki/Types).
