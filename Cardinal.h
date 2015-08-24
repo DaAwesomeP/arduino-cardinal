@@ -9,7 +9,7 @@
   This sketch takes a number input in degrees from serial at 9600 baud
   and outputs the heading in number and text form.
 
-    Copyright 2015 DaAwesomeP
+    Copyright 2015-present DaAwesomeP
     
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
