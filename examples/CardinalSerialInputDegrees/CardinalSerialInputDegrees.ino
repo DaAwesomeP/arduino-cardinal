@@ -3,13 +3,13 @@
   Cardinal Library example file
   Originally Created: August 10, 2015
 
-  Written by DaAwesomeP (https://daawesomep.github.io/)
+  Written by Perry Naseck (https://perrynaseck.com/)
   Project homepage at https://github.com/DaAwesomeP/arduino-cardinal
   
   This sketch takes a number input in degrees from serial at 9600 baud
   and outputs the heading in number and text form.
 
-    Copyright 2015-present DaAwesomeP
+    Copyright 2015-present Perry Naseck (DaAwesomeP)
     
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -50,7 +50,7 @@ Cardinal cardinal;   // init the library to "cardinal"
 void setup() {
   // Initialize serial
   Serial.begin(9600);
-  Serial.println("Cardinal example by DaAwesomeP");
+  Serial.println("Cardinal example");
   Serial.println("-------------------------------------------------------------------------------------------");
   // More environment variables can be found in Cardinal.h  or at https://github.com/DaAwesomeP/arduino-cardinal/wiki/Environment-Variables
   Serial.println("Did you know that lots of new environment variables are available now?");
